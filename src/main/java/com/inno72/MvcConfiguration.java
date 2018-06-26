@@ -22,8 +22,8 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.inno72.common.interceptor.LogInterceptor;
 import com.inno72.common.interceptor.PageListAttrHandlerInterceptor;
+import com.inno72.common.spring.JsonView;
 import com.inno72.redis.IRedisUtil;
-import com.inno72.spring.JsonView;
 
 @Configuration
 @EnableWebMvc

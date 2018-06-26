@@ -1,4 +1,4 @@
-package com.inno72.spring;
+package com.inno72.common.spring;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

@@ -43,7 +43,7 @@ public class LogInterceptor extends HandlerInterceptorAdapter {
 			throws Exception {
 
 		// 检查POST方法，token，url权限, 启用后删除检查参数中的token
-		checkAuthority(request);
+//		checkAuthority(request);
 
 		@SuppressWarnings("rawtypes")
 		Enumeration enumeration = request.getParameterNames();
@@ -157,7 +157,6 @@ public class LogInterceptor extends HandlerInterceptorAdapter {
 		return null;
 	}
 
-	@SuppressWarnings("static-access")
 	private void checkAuthority(HttpServletRequest request) throws HttpRequestMethodNotSupportedException {
 		String url = request.getServletPath();
 		boolean match = doNotCheckUs.parallelStream().anyMatch(_url -> url.indexOf(_url) != -1);

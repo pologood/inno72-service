@@ -10,14 +10,16 @@ import com.inno72.config.client.OrderProperties;
 import com.inno72.springboot.web.SpringApplicationBuilder;
 import com.inno72.springboot.web.SpringBootServletInitializer;
 
+import tk.mybatis.spring.annotation.MapperScan;
+
 /**
  * 订单服务
  */
 @SpringBootApplication(scanBasePackages = { "com.inno72" })
+@MapperScan(basePackages = "com.inno72")
 @EnableFeignClients
 @EnableEurekaClient
 @EnableCircuitBreaker // 开启熔断
-@EnableConfigurationProperties({ OrderProperties.class})
 public class Inno72Application extends SpringBootServletInitializer {
 
     /**

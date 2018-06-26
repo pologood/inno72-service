@@ -1,4 +1,4 @@
-package com.inno72.spring;
+package com.inno72.common.spring;
 
 import java.util.Iterator;
 import java.util.Map;
