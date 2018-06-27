@@ -1,7 +1,6 @@
 package com.inno72.mapper;
 
-import org.apache.ibatis.annotations.Mapper;
-
+import com.inno72.common.Mapper;
 import com.inno72.model.UserInfo;
 
 /**
@@ -9,8 +8,7 @@ import com.inno72.model.UserInfo;
 *
 * @author mapper-generator
 */
-@Mapper
-public interface UserInfoMapper extends tk.mybatis.mapper.common.Mapper<UserInfo> {
+public interface UserInfoMapper extends Mapper<UserInfo> {
 
 }
 

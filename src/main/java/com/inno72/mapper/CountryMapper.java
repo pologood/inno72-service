@@ -1,7 +1,6 @@
 package com.inno72.mapper;
 
-import org.apache.ibatis.annotations.Mapper;
-
+import com.inno72.common.Mapper;
 import com.inno72.model.Country;
 
 /**
@@ -9,8 +8,7 @@ import com.inno72.model.Country;
 *
 * @author mapper-generator
 */
-@Mapper
-public interface CountryMapper extends tk.mybatis.mapper.common.Mapper<Country> {
+public interface CountryMapper extends Mapper<Country> {
 
 }
 

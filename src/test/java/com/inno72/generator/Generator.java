@@ -1,4 +1,4 @@
-package com.gen;
+package com.inno72.generator;
 
 import org.hsqldb.cmdline.SqlFile;
 import org.mybatis.generator.api.MyBatisGenerator;

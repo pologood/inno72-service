@@ -11,6 +11,7 @@ public class UserInfo {
      *
      * @mbg.generated Tue Jun 26 18:27:41 CST 2018
      */
+	@Id
     private Integer id;
 
     /**

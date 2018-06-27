@@ -17,17 +17,17 @@ import com.inno72.service.UserInfoService;
 @RequestMapping("/userInfo")
 @CrossOrigin
 public class UserInfoController {
-	
+
 	@Autowired
 	private UserInfoService userInfoService;
-	
+
 	@RequestMapping(value = "/findAll", method = { RequestMethod.POST,  RequestMethod.GET})
 	public Result<List<UserInfo>> findAll(){
 		return Results.success(userInfoService.findAll());
 	}
-	
+
 	@RequestMapping(value = "/findByKey", method = { RequestMethod.POST,  RequestMethod.GET})
 	public Result<UserInfo> findByKey(UserInfo userInfo){
-		return Results.success(userInfoService.findByKey(userInfo));
+		return Results.success(userInfoService.findById(1));
 	}
 }
